@@ -2,13 +2,17 @@
 
 #include "BaseGameInstance.h"
 
-void UBaseGameInstance::SetPlayerAgentInfoFor(int PlayerControllerID, FSAgentInfo& info)
+
+void UBaseGameInstance::SetPlayerAgentInfoFor(int PlayerControllerID, FSAgentInfo AgentInfo)
 {
 
 }
 
-FSAgentInfo& UBaseGameInstance::GetPlayerAgentInfoFor(int PlayerControllerID, bool& Result)
+FSAgentInfo& UBaseGameInstance::GetPlayerAgentInfoFor(int PlayerControllerID, bool& Success)
 {
-	Result = false;
+	Success = false;
 	return PlayerAgentInfo[PlayerControllerID];
 }
+
+
+

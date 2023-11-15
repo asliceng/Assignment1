@@ -28,8 +28,8 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
 	float ProjectileSpeed;
 
-	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
-	float Damage;
+	UPROPERTY(BlueprintReadWrite, meta = (DisplayName = "Damage"), Category = "BirdOfPrey")
+	float _Damage;
 
 	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
 	UParticleSystem* DetonationEmitter;
@@ -54,7 +54,7 @@ public:
 	void InitialiseProjectile(FVector Direction, float Speed);
 
 	UFUNCTION(BlueprintCallable, Category = "BirdOfPrey")
-	void DealDamageTo(AActor* Damaging, float Damagee);
+	void DealDamageTo(AActor* Damaging, float Damage);
 
 	UFUNCTION(BlueprintCallable, Category = "BirdOfPrey")
 	void OnHit(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor);

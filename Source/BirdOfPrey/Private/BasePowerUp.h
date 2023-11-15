@@ -26,10 +26,10 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 public:
-	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
+	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey|Effects")
 	USoundCue* PickUpSoundCue;
 
-	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
+	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey|Effects")
 	UParticleSystem* PickUpParticleSystem;
 
 public:

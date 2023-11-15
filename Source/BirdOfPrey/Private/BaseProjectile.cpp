@@ -29,7 +29,7 @@ void ABaseProjectile::InitialiseProjectile(FVector Direction, float Speed)
 {
 }
 
-void ABaseProjectile::DealDamageTo(AActor* Damaging, float Damagee)
+void ABaseProjectile::DealDamageTo(AActor* Damaging, float Damage)
 {
 }
 

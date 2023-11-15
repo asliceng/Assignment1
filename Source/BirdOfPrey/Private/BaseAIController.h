@@ -17,16 +17,16 @@ class ABaseAIController : public AAIController
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
+	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey|Firing")
 	float LastFireTime;
 
-	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
+	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey|Firing")
 	bool bIsFiring;
 
-	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
+	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey|Firing")
 	float RefireDelay;
 
-	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
+	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey|Firing")
 	bool bShouldUpdateAim;
 
 	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")

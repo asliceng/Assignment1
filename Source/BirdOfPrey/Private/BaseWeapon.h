@@ -33,10 +33,10 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
 	bool bIsAutomatic;
 
-	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
+	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey|Effects")
 	UParticleSystem* FireParticleEffect;
 
-	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
+	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey|Effects")
 	USoundCue* FireSoundCue;
 
 public:
